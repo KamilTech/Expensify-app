@@ -13,28 +13,6 @@ const config = {
 firebase.initializeApp(config);
 const database = firebase.database();
 
-export { firebase, database as default };
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-/* database.ref().set({
-    name: 'Kamil',
-    age: 22,
-    isSingle: false,
-    location: {
-        city: 'Daleko',
-        country: 'United States'
-    },
-    desc: 'none'
-}).then(() => {
-    console.log('Data is saved!');
-}).catch((e) => {
-    console.log('This failed.', e);
-}); */
-
-/* var adaRef = firebase.database().ref('isSingle');
-adaRef.remove()
-  .then(function() {
-    console.log("Remove succeeded.")
-  })
-  .catch(function(error) {
-    console.log("Remove failed: " + error.message)
-  }); */
+export { firebase, googleAuthProvider ,database as default };
