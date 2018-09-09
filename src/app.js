@@ -32,7 +32,7 @@ firebase.auth().onAuthStateChanged((user) => {
         store.dispatch(startSetExpenses()).then(() => {
             renderApp();
             if (history.location.pathname === '/') {
-                history.push('/dashborad');
+                history.push('/dashboard');
             }
         });
     } else {
