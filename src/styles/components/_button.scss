@@ -1,19 +1,32 @@
 .button {
-  background: $blue;
+  background: #00a881;
   border: none;
   color: white;
   display: inline-block;
-  font-size: $font-size-large;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 1;
-  padding: $s-size;
+  border-radius: 25px;
+  padding: 15px 25px 15px;
   text-decoration: none;
+  transition: all .3s ease;
+  font-weight: 500;
+  box-shadow: -1px 3px 10px 0 rgba(0,0,0,.1);
+  &:hover {
+    background: #009b77;
+    transition: all .3s ease;
+  }
 }
 
 .button--link {
   background: none;
+  box-shadow: none;
 }
 
 .button--secondary {
   background: #888;
+  margin-bottom: 10px;
+  &:hover {
+    background-color: #a50000;
+  }
 }

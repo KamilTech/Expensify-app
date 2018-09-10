@@ -1,31 +1,36 @@
 .list-header {
   background: $off-white;
-  border: 1px solid darken($off-white, 7%);
   color: $grey;
   display: flex;
   justify-content: space-between;
   padding: $s-size $m-size;
+  margin-bottom: 10px;
+  border-bottom: 1px solid darken($off-white, 7%);
 }
 
 .list-body {
-  margin-bottom: $m-size;
+  padding-bottom: $m-size;
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: $l-size;
+    padding-bottom: $l-size;
   }
 }
 
 .list-item {
-  border: 1px solid darken($off-white, 7%);
-  border-top: none;
+  box-shadow: -1px 3px 10px 0 rgba(0,0,0,.04);
+  border-radius: 8px;
   color: $dark-grey;
+  background-color: white;
   display: flex;
   flex-direction: column;
   padding: $s-size;
   text-decoration: none;
-  transition: background .3s ease;
+  transition: all .3s ease;
+  margin-bottom: 10px;
   &:hover {
-    background: $off-white;
+    box-shadow: -1px 3px 10px 0 rgba(0,0,0,.1);
+    transition: all .3s ease;
   }
+
   @media (min-width: $desktop-breakpoint) {
     align-items: center;
     flex-direction: row;
